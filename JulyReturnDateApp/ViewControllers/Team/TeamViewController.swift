@@ -8,6 +8,14 @@
 
 import UIKit
 
+
+/// チーム識別用
+enum TeamNumber: Int {
+    case teamA
+    case teamB
+    case teamC
+}
+
 final class TeamViewController: UITableViewController {
     /// チーム一覧
     let teams = Team.fetchTeams()
@@ -17,6 +25,7 @@ final class TeamViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
     }
+    
 }
 
 // MARK: - UITableViewDataSource & UITableViewDelegate
@@ -46,7 +55,15 @@ extension TeamViewController {
 extension TeamViewController {
         
     @objc private func transitTeamAViewController() {
-        //TODO  : チームA
+        // チームAのメンバー表への遷移
+        guard let teamAViewController = UIStoryboard(name: TeamAViewController.identifier, bundle: nil)
+            .instantiateInitialViewController() as? TeamAViewController else {
+                return
+        }
+
+        teamAViewController.memberNameList = teams[TeamNumber.teamA.rawValue].member
+        
+        self.navigationController?.pushViewController(teamAViewController, animated: true)
     }
     
     @objc private func transitTeamBViewController() {

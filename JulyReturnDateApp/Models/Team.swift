@@ -8,12 +8,23 @@
 
 import Foundation
 
+struct Member: Decodable {
+    /// メンバー名
+    var name = ""
+}
+
 struct Team: Decodable {
     /// チーム名
     var name = ""
     
     /// 画面遷移メソッド
     var method = ""
+    
+    /// チームナンバー
+    var number = 0
+    
+    /// チームメンバー
+    let member : [Member]
 }
 
 struct Teams: Decodable {

@@ -1,16 +1,46 @@
 {
     "teams" : [
-        {
-            "name": "TeamA",
-            "method" : "transitTeamAViewController"
-        },
-        {
-            "name": "TeamB",
-            "method" : "transitTeamBViewController"
-        },
-        {
-            "name": "TeamC",
-            "method" : "transitTeamCViewController"
-        }
-    ]
+               {
+               "name": "TeamA",
+               "method" : "transitTeamAViewController",
+               "number" : 0,
+               "member" : [{
+                           "name" : "河原"
+                           }, {
+                           "name" : "小笠原"
+                           }, {
+                           "name" : "宗田"
+                           }, {
+                           "name" : "クアン"
+                           }]
+               },
+               {
+               "name": "TeamB",
+               "method" : "transitTeamBViewController",
+               "number" : 1,
+               "member" : [{
+                           "name" : ""
+                           }, {
+                           "name" : ""
+                           }, {
+                           "name" : ""
+                           }, {
+                           "name" : ""
+                           }]
+               },
+               {
+               "name": "TeamC",
+               "method" : "transitTeamCViewController",
+               "number" : 2,
+               "member" : [{
+                           "name" : ""
+                           }, {
+                           "name" : ""
+                           }, {
+                           "name" : ""
+                           }, {
+                           "name" : ""
+                           }]
+               }
+               ]
 }

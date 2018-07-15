@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		455DE9C820FAE275006379FA /* TeamAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455DE9C720FAE275006379FA /* TeamAViewController.swift */; };
+		455DE9CA20FAE2D1006379FA /* TeamAViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455DE9C920FAE2D1006379FA /* TeamAViewController.storyboard */; };
 		C594EA0020EDE6A300071E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594E9FF20EDE6A300071E87 /* AppDelegate.swift */; };
 		C594EA0220EDE6A300071E87 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594EA0120EDE6A300071E87 /* TeamViewController.swift */; };
 		C594EA0520EDE6A300071E87 /* TeamViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C594EA0320EDE6A300071E87 /* TeamViewController.storyboard */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		455DE9C720FAE275006379FA /* TeamAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamAViewController.swift; sourceTree = "<group>"; };
+		455DE9C920FAE2D1006379FA /* TeamAViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamAViewController.storyboard; sourceTree = "<group>"; };
 		C594E9FC20EDE6A300071E87 /* JulyReturnDateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JulyReturnDateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C594E9FF20EDE6A300071E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C594EA0120EDE6A300071E87 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		455DE9C620FAE239006379FA /* TeamA */ = {
+			isa = PBXGroup;
+			children = (
+				455DE9C720FAE275006379FA /* TeamAViewController.swift */,
+				455DE9C920FAE2D1006379FA /* TeamAViewController.storyboard */,
+			);
+			path = TeamA;
+			sourceTree = "<group>";
+		};
 		C594E9F320EDE6A300071E87 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 		C594EA2020EDE70600071E87 /* Team */ = {
 			isa = PBXGroup;
 			children = (
+				455DE9C620FAE239006379FA /* TeamA */,
 				C594EA0120EDE6A300071E87 /* TeamViewController.swift */,
 				C594EA0320EDE6A300071E87 /* TeamViewController.storyboard */,
 			);
@@ -227,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C594EA2920EDE9BA00071E87 /* teams.json in Resources */,
+				455DE9CA20FAE2D1006379FA /* TeamAViewController.storyboard in Resources */,
 				C594EA0A20EDE6A400071E87 /* LaunchScreen.storyboard in Resources */,
 				C594EA0720EDE6A400071E87 /* Assets.xcassets in Resources */,
 				C594EA0520EDE6A300071E87 /* TeamViewController.storyboard in Resources */,
@@ -250,6 +265,7 @@
 				C594EA2320EDE7AB00071E87 /* Team.swift in Sources */,
 				C594EA0220EDE6A300071E87 /* TeamViewController.swift in Sources */,
 				C594EA0020EDE6A300071E87 /* AppDelegate.swift in Sources */,
+				455DE9C820FAE275006379FA /* TeamAViewController.swift in Sources */,
 				C594EA2620EDE91500071E87 /* Bundle+JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
